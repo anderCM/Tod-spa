@@ -31,6 +31,8 @@ function Layout() {
         return 'Transacciones'
       case '/sales':
         return 'Ventas'
+      case '/reconciliations':
+        return 'Reconciliaciones'
       default:
         return 'Panel de Control'
     }
@@ -85,6 +87,14 @@ function Layout() {
                   to="/sales"
                 >
                   Ventas
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link 
+                  className={`nav-link ${location.pathname === '/reconciliations' ? 'active' : ''}`}
+                  to="/reconciliations"
+                >
+                  Reconciliaciones
                 </Link>
               </li>
             </ul>
