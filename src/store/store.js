@@ -4,6 +4,7 @@ import transactionsReducer from './slices/transactionsSlice'
 import salesReducer from './slices/salesSlice'
 import walletsReducer from './slices/walletSlice'
 import reconciliationRulesReducer from './slices/reconciliationRulesSlice'
+import reconciliationsReducer from './slices/reconciliationsSlice'
 
 export const store = configureStore({
   reducer: {
@@ -11,6 +12,7 @@ export const store = configureStore({
     transactions: transactionsReducer,
     sales: salesReducer,
     wallets: walletsReducer,
-    reconciliationRules: reconciliationRulesReducer
+    reconciliationRules: reconciliationRulesReducer,
+    reconciliations: reconciliationsReducer
   },
 })

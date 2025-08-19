@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard'
 import ReconciliationRules from './pages/ReconciliationRules'
 import Transactions from './pages/Transactions'
 import Sales from './pages/Sales'
+import Reconciliations from './pages/Reconciliations'
 
 function PrivateRoute({ children }) {
   const { isAuthenticated } = useSelector((state) => state.auth)
@@ -23,6 +24,7 @@ function App() {
         <Route path="/reconciliation-rules" element={<ReconciliationRules />} />
         <Route path="/transactions" element={<Transactions />} />
         <Route path="/sales" element={<Sales />} />
+        <Route path="/reconciliations" element={<Reconciliations />} />
       </Route>
     </Routes>
   )
